@@ -1,0 +1,30 @@
+{
+  "name": "generatePinterestPinsWithImages",
+  "description": "Generates Pinterest pin content and image prompts with optional DALL·E image generation.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Short Pinterest headline under 50 characters"
+      },
+      "description": {
+        "type": "string",
+        "description": "1–2 sentence benefit-driven description"
+      },
+      "call_to_action": {
+        "type": "string",
+        "description": "Encouraging phrase like 'Read more'"
+      },
+      "image_prompt": {
+        "type": "string",
+        "description": "Detailed image concept for DALL·E or Canva"
+      },
+      "generate_image": {
+        "type": "boolean",
+        "description": "Whether to auto-generate the image using DALL·E"
+      }
+    },
+    "required": ["title", "description", "call_to_action", "image_prompt"]
+  }
+}
